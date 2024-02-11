@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  chat:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5435:5432'
+    volumes:
+      - chat:/var/lib/postgresql/data
+volumes:
+  chat:
