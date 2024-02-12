@@ -23,25 +23,27 @@
       <section>
         <div class="container">
           <div class="mb-3 mt-3">
-            <ul class="messages-list" style="list-style: none"></ul>
+            <ul class="messages-list p-0" style="list-style: none"></ul>
           </div>
-          <div class="mb-3 mt-4">
-            <input
-              class="form-control username-input"
-              type="text"
-              placeholder="Имя"
-            />
-          </div>
-          <div class="mb-3 mt-4">
-            <input
-              class="form-control message-input"
-              type="text"
-              placeholder="Сообщение"
-            />
-          </div>
-          <div class="mb-3 mt-4">
-            <button class="btn btn-primary send-btn">Отправить</button>
-          </div>
+          <form class="px-5">
+            <div class="mb-3 mt-4">
+              <input
+                class="form-control username-input"
+                type="text"
+                placeholder="Имя"
+              />
+            </div>
+            <div class="mb-3 mt-4">
+              <textarea
+                class="form-control message-input"
+                name="message"
+                placeholder="Сообщение"
+              ></textarea>
+            </div>
+            <div class="mb-3 mt-4">
+              <button class="btn btn-primary send-btn">Отправить</button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
