@@ -23,7 +23,9 @@ const app = () => {
   };
   getMessages();
 
-  const handleSendMessage = (text) => {
+  const handleSendMessage = (event, text) => {
+    event.preventDefault();
+
     if (!text.trim()) {
       return;
     }
@@ -39,10 +41,15 @@ const app = () => {
 
   msgInput.addEventListener(
     'keydown',
-    (e) => e.keyCode === 13 && handleSendMessage(e.target.value),
+    (event) =>
+      event.keyCode === 13 &&
+      !event.shiftKey &&
+      handleSendMessage(event, event.target.value),
   );
 
-  sendBtn.addEventListener('click', () => handleSendMessage(msgInput.value));
+  sendBtn.addEventListener('click', (event) =>
+    handleSendMessage(event, msgInput.value),
+  );
 
   const renderMessages = (data) => {
     let messages = '';
