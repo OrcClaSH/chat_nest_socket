@@ -1,0 +1,10 @@
+.message {
+    position: relative;
+}
+
+.date {
+    position: absolute;
+    bottom: 4px;
+    right: 7px;
+    font-size: 12px;
+}

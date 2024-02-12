@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.0.0/dist/css/bootstrap-dark.min.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Chat</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="">Chat</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="mb-3 mt-3">
+            <ul class="messages-list" style="list-style: none"></ul>
+          </div>
+          <div class="mb-3 mt-4">
+            <input
+              class="form-control username-input"
+              type="text"
+              placeholder="Имя"
+            />
+          </div>
+          <div class="mb-3 mt-4">
+            <input
+              class="form-control message-input"
+              type="text"
+              placeholder="Сообщение"
+            />
+          </div>
+          <div class="mb-3 mt-4">
+            <button class="btn btn-primary send-btn">Отправить</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
+      integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.4/socket.io.js"
+      integrity="sha512-tE1z+95+lMCGwy+9PnKgUSIeHhvioC9lMlI7rLWU0Ps3XTdjRygLcy4mLuL0JAoK4TLdQEyP0yOl/9dMOqpH/Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
