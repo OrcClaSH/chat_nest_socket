@@ -1,5 +1,5 @@
 const app = () => {
-  const BASE_URL = process?.env?.BASE_URL || 'http://clt.its:3005';
+  const BASE_URL = 'http://clt.its:3005';
 
   const socket = io(BASE_URL);
 
